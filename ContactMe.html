@@ -177,21 +177,20 @@
     <form action="https://formsubmit.co/aplacious@outlook.com" subject="New Client" method="post" enctype="text/plain">
 
       <label for="name">Name</label>
-      <input type="text" id="name" name="Name" placeholder="Name..">
+      <input type="text" name="name" placeholder="Name.." required>
 
       <label for="email">Email</label>
-      <input type="text" id="email" name="Email" placeholder="Email..">
+      <input type="email" name="email" placeholder="Email.." required>
 
       <label for="interest">Interested In</label>
-      <select id="interest" name="interest">
+      <select name="interest">
         <option value="portrait">Portraits</option>
         <option value="event">Event</option>
         <option value="pets">Pets</option>
       </select>
 
       <label for="detail">Details</label>
-      <textarea id="detail" name="detail" placeholder="Please add all the details here!"
-        style="height:200px"></textarea>
+      <textarea name="detail" placeholder="Please add all the details here!" style="height:200px"></textarea>
 
       <input type="submit" value="Submit">
 
