@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .header {
+      overflow: hidden;
+      background-color: #f1f1f1;
+      padding: 20px 10px;
+    }
+
+    /* Style the header links */
+    .header a {
+      float: left;
+      color: black;
+      text-align: center;
+      padding: 20px;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      border-radius: 4px;
+    }
+
+    /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
+    .header a.logo {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    /* Change the background color on mouse-over */
+    .header a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    /* Style the active/current link*/
+    .header a.active {
+      background-color: dodgerblue;
+      color: white;
+    }
+
+    /* Float the link section to the right */
+    .header-right {
+      float: right;
+    }
+
+    /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+    @media screen and (max-width: 500px) {
+      .header a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+      .header-right {
+        float: none;
+      }
+    }
+
+    .responsive {
+      max-width: 100%;
+      height: auto;
+      padding-left: 150px;
+      padding-right: 150px;
+    }
+
+    hr.line {
+      width: 75%;
+      color: red;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+
+    h1.aboutMe {
+      padding-left: 12.5%;
+    }
+
+    p.aboutMeParagraph {
+      padding-left: 12.5%;
+      padding-right: 12.5%;
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="header">
+    <a href="PaigeMain.html" class="logo" style="font-family:Brush Script MT">Paige Elizabeth Photography</a>
+    <div class="header-right">
+      <a class="active" href="PaigeMain.html">Home</a>
+      <a href="MyPortfolio.html">My Portfolio</a>
+      <a href="ContactMe.html">Contact Me</a>
+    </div>
+  </div>
+
+  <br>
+  <h1 class="aboutMe" style="font-family:Didot">About Me</h1>
+  <hr class="line">
+  <p class="aboutMeParagraph">My name is Paige Mahnke. I grew up in Livonia, NY but currently live in Rochester, NY as a
+    full time student.
+    I am currently working towards my BS in Marketing from the University of Roberts Weslyan. When I am not in school I
+    am
+    capturing the beauty of Rochester. I have been actively taking pictures since I was in high school. Since then I
+    have
+    been my family and friends go to for senior pictures, engagement photos, photoshoots, etc.. Feel free to check out
+    the portfolio I have grown
+    throughout the years and let me know how I can help capture your next event!
+  </p>
+
+
+
+  <img src="PaigeMain.JPG" class="responsive" width=100% height=50%>
+
+
+</body>
+
+
+</html>
