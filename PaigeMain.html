@@ -21,7 +21,7 @@
 
     .header {
       overflow: hidden;
-      background-color: #f1f1f1;
+      background-color: #1d617a;
       padding: 20px 10px;
     }
 
@@ -54,8 +54,8 @@
 
     /* Style the active/current link*/
     .header a.active {
-      background-color: dodgerblue;
-      color: white;
+      background-color: #cae4e8;
+      color: black;
     }
 
     /* Float the link section to the right */
@@ -77,14 +77,6 @@
       }
     }
 
-    .responsive {
-      width: auto;
-      max-width: 100%;
-      height: auto;
-      padding-left: 15%;
-      padding-right: 15%;
-    }
-
     hr.line {
       width: 75%;
       color: red;
@@ -96,15 +88,32 @@
       padding-left: 12.5%;
     }
 
-    p.aboutMeParagraph {
-      padding-left: 12.5%;
+    .aboutMeParagraph {
+      padding-left: 2%;
       padding-right: 12.5%;
+      float: right;
+      font-size: large;
+    }
+
+    .responsive {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center
+    }
+
+    .image {
+      padding-left: 12.5%;
     }
   </style>
 </head>
 
 
-<body>
+<body style="background-color: #cae4e8;">
   <div class="header">
     <a href="PaigeMain.html" class="logo" style="font-family:myFirstFont">
       Paige Elizabeth Photography
@@ -117,24 +126,31 @@
   </div>
 
   <br>
-  <h1 class="aboutMe" style="font-family:Didot">About Me</h1>
+  <h1 class="aboutMe" style="font-family:Didot">Get To Know Me...</h1>
   <hr class="line">
-  <p class="aboutMeParagraph">My name is Paige Mahnke. I grew up in Livonia, NY but currently live in Rochester, NY as a
-    full time student.
-    I am currently working towards my BS in Marketing from the University of Roberts Weslyan. When I am not in school I
-    am
-    capturing the beauty of Rochester. I have been actively taking pictures since I was in high school. Since then I
-    have
-    been my family and friends go to for senior pictures, engagement photos, photoshoots, etc.. Feel free to check out
-    the portfolio I have grown
-    throughout the years and let me know how I can help capture your next event!
-  </p>
+
+  <div class="container">
+    <div class="image">
+      <img src="PaigeMain.JPG" class="responsive">
+    </div>
+    <div class="aboutMeParagraph">
+      <p>My name is Paige Mahnke. I grew up in Livonia, NY but currently live in Rochester, NY as a
+        full time student.
+        I am currently working towards my BS in Marketing from the University of Roberts Weslyan. When I am not in
+        school
+        I
+        am
+        capturing the beauty of Rochester. I have been actively taking pictures since I was in high school. Since then I
+        have
+        been my family and friends go to for senior pictures, engagement photos, photoshoots, etc.. Feel free to check
+        out
+        the portfolio I have grown
+        throughout the years and let me know how I can help capture your next event!
+      </p>
+    </div>
 
 
-
-  <img src="PaigeMain.JPG" class="responsive" width=100% height=50%>
-
-
+  </div>
 </body>
 
 
