@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="MainTheme.css">
+
+  <style>
+    .row {
+      margin: 10px -16px;
+    }
+
+    .row,
+    .row>.column {
+      padding: 8px;
+    }
+
+    .column {
+      float: left;
+      width: 33.33%;
+      display: none;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+
+    .show {
+      display: block;
+    }
+
+    .btn {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      background-color: white;
+      cursor: pointer;
+      margin-top: 1%;
+      margin-left: 1%;
+      margin-bottom: 1%;
+      border-radius: 40px;
+    }
+
+    .btn:hover {
+      background-color: #ddd;
+    }
+
+    .btn.active {
+      background-color: #113c4b;
+      color: white;
+    }
+
+    .bodyHeading {
+      padding-left: 1%;
+    }
+
+    .img {
+      border-radius: 15px;
+      padding: 10px;
+      background-color: #113c4b;
+    }
+
+    @media screen and (max-width: 500px) {
+      .btn {
+        margin-top: 2%;
+      }
+    }
+  </style>
+</head>
+
+
+<body>
+  <div class="header">
+    <a href="PaigeMain.html" class="logo" style="font-family:myFirstFont">Paige Elizabeth
+      Photography</a>
+    <div class="header-right">
+      <a href="PaigeMain.html">Home</a>
+      <a class="active" href="MyPortfolio.html">My Portfolio</a>
+      <a href="ContactMe.html">Contact Me</a>
+    </div>
+  </div>
+
+
+
+  <div id="myBtnContainer">
+    <button class="btn active" onclick="filterSelection('all')">Show all</button>
+    <button class="btn" onclick="filterSelection('products')">Products</button>
+    <button class="btn" onclick="filterSelection('nature')">Nature</button>
+    <button class="btn" onclick="filterSelection('event')">Events</button>
+    <button class="btn" onclick="filterSelection('seniors')">Seniors</button>
+    <button class="btn" onclick="filterSelection('pets')">Pets</button>
+    <button class="btn" onclick="filterSelection('family')">Family</button>
+    <button class="btn" onclick="filterSelection('engagement')">Engagement & Weddings</button>
+  </div>
+
+  <div class="row">
+    <div class="column nature">
+      <img class="img" src="Nature\Nature1.jpeg" style="width:100%">
+    </div>
+    <div class="column nature">
+      <img class="img" src="Nature\Nature2.jpeg" style="width:100%">
+    </div>
+    <div class="column nature">
+      <img class="img" src="Nature\Nature3.jpeg" style="width:100%">
+    </div>
+    <div class="column nature">
+      <img class="img" src="Nature\Nature4.jpeg" style="width:100%">
+    </div>
+    <div class="column nature">
+      <img class="img" src="Nature\Nature5.jpeg" style="width:100%">
+    </div>
+    <div class="column nature">
+      <img class="img" src="Nature\Nature6.jpeg" style="width:100%">
+    </div>
+    <div class="column nature">
+      <img class="img" src="Nature\Nature7.jpeg" style="width:100%">
+    </div>
+    <div class="column nature">
+      <img class="img" src="Nature\Nature8.jpeg" style="width:100%">
+    </div>
+    <div class="column nature">
+      <img class="img" src="Nature\Nature9.jpeg" style="width:100%">
+    </div>
+    <div class="column nature">
+      <img class="img" src="Nature\Nature13.jpeg" style="width:100%">
+    </div>
+    <div class="column nature">
+      <img class="img" src="Nature\Nature12.jpeg" style="width:100%">
+    </div>
+    <div class="column nature">
+      <img class="img" src="Nature\Nature15.jpeg" style="width:100%">
+    </div>
+    <div class="column nature">
+      <img class="img" src="Nature\Nature10.jpeg" style="width:100%">
+    </div>
+    <div class="column nature">
+      <img class="img" src="Nature\Nature14.jpeg" style="width:100%">
+    </div>
+    <div class="column nature">
+      <img class="img" src="Nature\Nature11.jpeg" style="width:100%">
+    </div>
+
+    <div class="column family">
+      <img class="img" src="Family\Family1.jpeg" style="width:100%">
+    </div>
+    <div class="column family">
+      <img class="img" src="Family\Family2.jpeg" style="width:100%">
+    </div>
+    <div class="column family">
+      <img class="img" src="Family\Family3.jpeg" style="width:100%">
+    </div>
+    <div class="column family">
+      <img class="img" src="Family\Family4.jpeg" style="width:100%">
+    </div>
+    <div class="column family">
+      <img class="img" src="Family\Family5.jpeg" style="width:100%">
+    </div>
+    <div class="column family">
+      <img class="img" src="Family\Family6.jpeg" style="width:100%">
+    </div>
+    <div class="column family">
+      <img class="img" src="Family\Family11.jpeg" style="width:100%">
+    </div>
+    <div class="column family">
+      <img class="img" src="Family\Family8.jpeg" style="width:100%">
+    </div>
+    <div class="column family">
+      <img class="img" src="Family\Family7.jpeg" style="width:100%">
+    </div>
+    <div class="column family">
+      <img class="img" src="Family\Family12.jpeg" style="width:100%">
+    </div>
+    <div class="column family">
+      <img class="img" src="Family\Family9.jpeg" style="width:100%">
+    </div>
+    <div class="column family">
+      <img class="img" src="Family\Family10.jpeg" style="width:100%">
+    </div>
+
+    <div class="column engagement">
+      <img class="img" src="Engagement\Engagement6.jpeg" style="width:100%">
+    </div>
+    <div class="column engagement">
+      <img class="img" src="Engagement\Engagement7.jpeg" style="width:100%">
+    </div>
+    <div class="column engagement">
+      <img class="img" src="Engagement\Engagement8.jpeg" style="width:100%">
+    </div>
+    <div class="column engagement">
+      <img class="img" src="Engagement\Engagement1.jpeg" style="width:100%">
+    </div>
+    <div class="column engagement">
+      <img class="img" src="Engagement\Engagement2.jpeg" style="width:100%">
+    </div>
+    <div class="column engagement">
+      <img class="img" src="Engagement\Engagement3.jpeg" style="width:100%">
+    </div>
+    <div class="column engagement">
+      <img class="img" src="Engagement\Engagement5.jpeg" style="width:100%">
+    </div>
+    <div class="column engagement">
+      <img class="img" src="Wedding/Wedding1.jpeg" style="width:100%">
+    </div>
+    <div class="column engagement">
+      <img class="img" src="Wedding/Wedding2.jpeg" style="width:100%">
+    </div>
+
+    <div class="column pets">
+      <img class="img" src="Pets\Pets17.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets1.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets2.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets3.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets4.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets5.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets6.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets7.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets8.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets9.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets10.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets11.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets12.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets13.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets14.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets15.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets16.jpeg" style="width:100%">
+    </div>
+    <div class="column pets">
+      <img class="img" src="Pets\Pets18.jpeg" style="width:100%">
+    </div>
+
+    <div class="column products">
+      <img class="img" src="Product Photography/Product8.jpeg" style="width:100%">
+    </div>
+    <div class="column products">
+      <img class="img" src="Product Photography/Product2.jpeg" style="width:100%">
+    </div>
+    <div class="column products">
+      <img class="img" src="Product Photography/Product3.jpeg" style="width:100%">
+    </div>
+    <div class="column products">
+      <img class="img" src="Product Photography/Product4.jpeg" style="width:100%">
+    </div>
+    <div class="column products">
+      <img class="img" src="Product Photography/Product5.jpeg" style="width:100%">
+    </div>
+    <div class="column products">
+      <img class="img" src="Product Photography/Product6.jpeg" style="width:100%">
+    </div>
+    <div class="column products">
+      <img class="img" src="Product Photography/Product7.jpeg" style="width:100%">
+    </div>
+    <div class="column products">
+      <img class="img" src="Product Photography/Product1.jpeg" style="width:100%">
+    </div>
+    <div class="column products">
+      <img class="img" src="Product Photography/Product9.jpeg" style="width:100%">
+    </div>
+
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior1.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior3.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior4.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior5.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior6.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior7.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior8.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior9.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior10.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior11.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior12.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior13.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior14.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior15.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior16.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior17.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior20.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior19.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior24.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior21.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior22.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior23.jpeg" style="width:100%">
+    </div>
+    <div class="column seniors">
+      <img class="img" src="Senior/Senior18.jpeg" style="width:100%">
+    </div>
+
+  </div>
+
+
+  <script>
+    filterSelection("all")
+
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("column");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) { element.className += " " + arr2[i]; }
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function () {
+        var current = document.getElementsByClassName("btn active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+  </script>
+
+
+
+
+
+
+
+</body>
+
+
+</html>
