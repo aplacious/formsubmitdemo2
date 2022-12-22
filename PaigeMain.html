@@ -3,91 +3,21 @@
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" type="text/css" href="MainTheme.css">
 
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
-
-    @font-face {
-      font-family: myFirstFont;
-      src: url(BrushScriptOpti-Regular.otf);
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    .header {
-      overflow: hidden;
-      background-color: #1d617a;
-      padding: 20px 10px;
-    }
-
-    /* Style the header links */
-    .header a {
-      float: left;
-      color: black;
-      text-align: center;
-      padding: 20px;
-      text-decoration: none;
-      font-size: 18px;
-      line-height: 25px;
-      border-radius: 4px;
-    }
-
-    /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
-    .header a.logo {
-      font-size: 250%;
-      font-weight: bold;
-      display: inline-block;
-      padding-bottom: 3%;
-      padding-top: 3%;
-    }
-
-    /* Change the background color on mouse-over */
-    .header a:hover {
-      background-color: #113c4b;
-      color: black;
-    }
-
-    /* Style the active/current link*/
-    .header a.active {
-      background-color: #cae4e8;
-      color: black;
-    }
-
-    /* Float the link section to the right */
-    .header-right {
-      float: right;
-      padding-top: 1.5%;
-    }
-
-    /* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
-    @media screen and (max-width: 500px) {
-      .header a {
-        float: none;
-        display: block;
-        text-align: left;
-      }
-
-      .header-right {
-        float: none;
-      }
-    }
-
     hr.line {
       width: 50%;
       color: black;
-      margin-top: 15px;
-      margin-bottom: 15px;
+      margin-left: 0;
     }
 
     h1.aboutMe {
-      padding-left: 12.5%;
+      padding-left: 1%;
+      padding-top: 1%;
+      background-color: white;
+      margin-top: 0;
+      margin-bottom: 0;
     }
 
     .aboutMeParagraph {
@@ -95,7 +25,6 @@
       padding-right: 12.5%;
       font-size: large;
     }
-
 
     .responsive {
       max-width: 100%;
@@ -108,41 +37,26 @@
       justify-content: center
     }
 
-    /*faf9f5*/
-
     .image {
-      padding-left: 12.5%;
+      padding-left: 1%;
     }
 
-    .sidebar {
-      height: 100%;
-      width: 100px;
-      position: absolute;
-      background-color: #1d617a;
-    }
+    @media screen and (max-width: 500px) {
+      .container {
+        display: inline;
+      }
 
-    .mySlides {
-      display: none;
-      height: 50%;
-      padding-top: 2%;
-    }
-
-    .w3-left,
-    .w3-right,
-    .w3-badge {
-      cursor: pointer;
-    }
-
-    .w3-badge {
-      height: 13px;
-      width: 13px;
-      padding: 0
+      .image {
+        padding-left: 1%;
+        padding-right: 1%;
+      }
     }
   </style>
 </head>
 
 
-<body style="background-color: white;">
+<body>
+
   <div class="header">
     <a href="PaigeMain.html" class="logo" style="font-family:myFirstFont">
       Paige Elizabeth Photography
@@ -154,79 +68,31 @@
     </div>
   </div>
 
-  <div class="sidebar">
-  </div>
 
-  <div class="w3-content w3-display-container" style="max-width:80%">
-    <img class="mySlides" src="Slide1.jpeg" style="width:100%">
-    <img class="mySlides" src="Slide2.jpeg" style="width:100%">
-    <img class="mySlides" src="Slide3.jpeg" style="width:100%">
-    <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:50%">
-      <div class="w3-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
-      <div class="w3-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
-      <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+  <div class="main">
+    <h1 class="aboutMe" style="font-family:Didot">Get To Know Me...</h1>
+    <hr class="line">
+
+    <div class="container">
+      <div class="image">
+        <img src="PaigeMain.JPG" class="responsive">
+      </div>
+      <div class="aboutMeParagraph">
+        <p>My name is Paige Mahnke. I grew up in Livonia, NY but currently live in Rochester, NY as a
+          full time student. I am currently working towards my BS in Marketing from the University of Roberts Weslyan.
+          When I am not in
+          school I am capturing the beauty of Rochester. I have been actively taking pictures since I was in high
+          school.
+          Since then I
+          have been my family and friends go to for senior pictures, engagement photos, photoshoots, etc.. Feel free
+          to
+          check
+          out the portfolio I have grown throughout the years and let me know how I can help capture your next event!
+        </p>
+      </div>
     </div>
   </div>
 
-  <div class="sidebar">
-  </div>
-
-  <br>
-  <h1 class="aboutMe" style="font-family:Didot">Get To Know Me...</h1>
-  <hr class="line">
-
-  <div class="container">
-    <div class="image">
-      <img src="PaigeMain.JPG" class="responsive">
-    </div>
-    <div class="aboutMeParagraph">
-      <p>My name is Paige Mahnke. I grew up in Livonia, NY but currently live in Rochester, NY as a
-        full time student. I am currently working towards my BS in Marketing from the University of Roberts Weslyan.
-        When I am not in
-        school I am capturing the beauty of Rochester. I have been actively taking pictures since I was in high school.
-        Since then I
-        have been my family and friends go to for senior pictures, engagement photos, photoshoots, etc.. Feel free to
-        check
-        out the portfolio I have grown throughout the years and let me know how I can help capture your next event!
-      </p>
-    </div>
-
-
-  </div>
-
-
-
-  <script>
-    var slideIndex = 1;
-    showDivs(slideIndex);
-
-    function plusDivs(n) {
-      showDivs(slideIndex += n);
-    }
-
-    function currentDiv(n) {
-      showDivs(slideIndex = n);
-    }
-
-    function showDivs(n) {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      var dots = document.getElementsByClassName("demo");
-      if (n > x.length) { slideIndex = 1 }
-      if (n < 1) { slideIndex = x.length }
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" w3-white", "");
-      }
-      x[slideIndex - 1].style.display = "block";
-      dots[slideIndex - 1].className += " w3-white";
-    }
-  </script>
 </body>
-
 
 </html>
