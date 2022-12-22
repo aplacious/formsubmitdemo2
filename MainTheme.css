@@ -19,6 +19,9 @@ body {
   margin-top: 0;
   background-color: white;
   height: 100vh;
+  border-style: solid;
+  border-color: white;
+  border-radius: 10px;
 }
 
 .header {
