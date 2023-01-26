@@ -141,6 +141,10 @@
 		bottom: 15px;
 		}
 		
+		.img {
+		max-height: 90%
+		}
+		
     }
   </style>
 </head>
@@ -439,7 +443,7 @@
 
 
 	<div id="myModal" class="modal">
-		<span class="close">&times; Close</span>
+		<span class="close">X Close</span>
 		<img class="modal-content" id="img01">
 	</div>
 
@@ -490,17 +494,23 @@
       });
     }
 
+
+
+
+
+var width = document.documentElement.clientWidth;
 var modal = document.getElementById('myModal');
 var images = document.getElementsByClassName('img');
 var modalImg = document.getElementById("img01");
 
 for (var i = 0; i < images.length; i++) {
 	var img = images[i];
-
+	if (width > 500) {
 	img.onclick = function(evt){
   		modal.style.display = "block";
   		modalImg.src = this.src;
 		document.querySelector("body").style.overflow = 'hidden';
+	}
 	}
 }
 
