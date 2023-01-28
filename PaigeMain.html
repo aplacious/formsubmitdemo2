@@ -6,10 +6,23 @@
   <link rel="stylesheet" type="text/css" href="MainTheme.css">
 
   <style>
+
+	.main {
+	margin-right: 5%;
+	margin-left: 5%;
+  	margin-top: 0;
+	margin-bottom: 5%;
+  	background-color: white;
+  	border-style: solid;
+  	border-color: white;
+  	border-radius: 10px;
+	
+	}
+
     hr.line {
       width: 50%;
       color: black;
-      margin-left: 0;
+      margin-left: 1%;
     }
 
     h1.aboutMe {
@@ -41,6 +54,103 @@
       padding-left: 1%;
     }
 
+	.MainPicture {
+		border-radius: 15px;
+	}
+	
+	.logo {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	opacity: 85%;
+	border-bottom: solid white;
+	border-width: 3px;
+	}
+	
+	.backgroundpic {
+	opacity 70%;
+	width:100%;
+	}
+
+
+.hero-image {
+  background: url('BackgroundPic.JPG') no-repeat center; 
+  background-size: cover;
+  position: relative;
+	height:100%;
+}
+
+.header-right {
+padding-top: 1%;
+}
+
+.slideshow-container {
+  width: 85%;
+  position: relative;
+  margin: auto;
+	padding-top: 2%;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+	
+
     @media screen and (max-width: 500px) {
       .container {
         display: inline;
@@ -56,43 +166,138 @@
 
 
 <body>
+	
+	<div class="hero-image">
+	<img class="logo" src="MainLogo.jpeg">
+	</div>
 
-  <div class="header">
-    <a href="PaigeMain.html" class="logo" style="font-family:myFirstFont">
-      Paige Elizabeth Photography
-    </a>
-    <div class="header-right">
+<header>
+<div class="header">
+
+	<div class="header-right">
       <a class="active" href="PaigeMain.html">Home</a>
       <a href="MyPortfolio.html">My Portfolio</a>
       <a href="ContactMe.html">Contact Me</a>
-    </div>
+   </div>
+</div>
+
+</header>
+
+
+
+
+
+<div class="main">
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <img src="Slideshow\image1.jpeg" style="width:100%">
   </div>
 
+  <div class="mySlides fade">
+    <img src="Slideshow\image2.jpeg" style="width:100%">
+  </div>
 
-  <div class="main">
+  <div class="mySlides fade">
+    <img src="Slideshow\image3.jpeg" style="width:100%">
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="main">
     <h1 class="aboutMe" style="font-family:Didot">Get To Know Me...</h1>
     <hr class="line">
 
     <div class="container">
       <div class="image">
-        <img src="PaigeMain.JPG" class="responsive">
+        <img src="PaigeMain4.JPG" class="responsive" style="border-radius: 10px;">
       </div>
       <div class="aboutMeParagraph">
-        <p>My name is Paige Mahnke. I grew up in Livonia, NY but currently live in Rochester, NY as a
-          full time student. I am currently working towards my BS in Marketing from the University of Roberts Weslyan.
-          When I am not in
-          school I am capturing the beauty of Rochester. I have been actively taking pictures since I was in high
-          school.
-          Since then I
-          have been my family and friends go to for senior pictures, engagement photos, photoshoots, etc.. Feel free
-          to
-          check
-          out the portfolio I have grown throughout the years and let me know how I can help capture your next event!
+        <p>Hi ya'll my name is Paige!
+          I am a photographer based in Rochester, NY but a few times a year I travel to Emerald Isle, NC!
+          I have my bachelors degree in Marketing, but photography is my passion so I am working to become a full time
+          photographer in marketing and portraits. I'm continuing to grow everyday to be the best photographer I can be!
+        </p>
+        <br>
+        <p>
+          If I could describe my photography in one word I would say "natural". I strive to take the best image I can in
+          order to
+          have the least amount of edits possible, but don't get me wrong I love a good edit! My goal is to show my
+          photography
+          skills more than my editing skills. I enjoy trying to achieve a specific look in my images before the editing
+          process.
         </p>
       </div>
     </div>
   </div>
 
 </body>
+
+<script>
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
 
 </html>
