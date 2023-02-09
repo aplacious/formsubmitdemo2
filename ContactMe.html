@@ -8,33 +8,51 @@
 
   <style>
 
-	.main {
-	height: 100vh;
+	.body {
+	position: fixed;
 	}
 
-    /* Style inputs with type="text", select elements and textareas */
-    input[type=text],
+	.main {
+	padding: 1%;
+	}
+	
+	.wrapper {
+	display: flex;
+	width: 100%;
+	}
+	
+	.block1 {
+	float: left;
+	width: 100%;
+	}
+	
+	.email {
+	margin-right: 2.5%;
+	}
+	
+	.block2 {
+	width: 20%;
+	margin-right:5%;
+	}
+	
+	.social {
+	margin-left: 0%;
+	padding-bottom: 5%;
+	}
+	
+	input[type=text],
     select,
     textarea {
       width: 100%;
-      /* Full width */
       padding: 12px;
-      /* Some padding */
       border: 1px solid #ccc;
-      /* Gray border */
       border-radius: 4px;
-      /* Rounded borders */
       box-sizing: border-box;
-      /* Make sure that padding and width stays in place */
       margin-top: 6px;
-      /* Add a top margin */
       margin-bottom: 16px;
-      /* Bottom margin */
       resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
-    }
+	}
 
-    /* Style the submit button with a specific background color etc */
     input[type=submit] {
       background-color: #048556;
       color: white;
@@ -44,35 +62,33 @@
       cursor: pointer;
     }
 
-    /* When moving the mouse over the submit button, add a darker green color */
     input[type=submit]:hover {
       background-color: #45a049;
     }
 
-    /* Add a background color and some padding around the form */
     .container {
       border-radius: 5px;
       background-color: white;
-      padding-left: 1%;
       padding-right: 35%;
-    }
+	}
 
     .socials {
       background-color: white;
-      padding-left: 1%;
-      padding-top: 1%;
+      padding-left: 10%;
+		padding-right: 10%;
+		width: 100%;
       padding-bottom: 1%;
+		display: inline-block;
     }
 
     .fa {
-      padding-left: 20px;
-      padding-right: 45px;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      font-size: 30px;
-      width: 30px;
+		padding: 30px;
+      font-size: 40px;
+      width: 45%;
+		margin: 5px 2px;
       text-align: center;
       text-decoration: none;
+		border-radius: 20px;
     }
 
     .fa:hover {
@@ -82,29 +98,31 @@
     .fa-linkedin {
       background: #007bb5;
       color: white;
+		float: right;
     }
 
+	.socials a {
+	padding: 10px;
+	}
 
     .fa-instagram {
-      background: #125688;
+      background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
       color: white;
     }
 
+	 .fa-facebook {
+		background: #3b5998;
+		color: white;
+	}
+
     .form-email {
       width: 100%;
-      /* Full width */
       padding: 12px;
-      /* Some padding */
       border: 1px solid #ccc;
-      /* Gray border */
       border-radius: 4px;
-      /* Rounded borders */
       box-sizing: border-box;
-      /* Make sure that padding and width stays in place */
       margin-top: 6px;
-      /* Add a top margin */
       margin-bottom: 16px;
-      /* Bottom margin */
       resize: vertical
     }
   </style>
@@ -127,17 +145,12 @@
   </div>
 
 
+<div class="wrapper">
 
-  <div class="main">
-    <div class="socials">
-      <h2>My Socials:</h2>
-      <a href="https://www.instagram.com/paige3lizabethphotography/" class="fa fa-instagram"></a>
-      <a href="https://www.linkedin.com/in/paige-mahnke-39b926210/" class="fa fa-linkedin"></a>
-    </div>
-
-
+<div class="block1">
+	<div class="main email">
     <div class="container">
-      <h2>Email Me:</h2>
+      <h2 style="font-family: monaco, monospace">Email Me:</h2>
 
       <form target="_blank" action="https://formsubmit.co/aplacious@outlook.com" method="POST">
 
@@ -171,6 +184,20 @@
       </form>
     </div>
   </div>
+</div>
+
+<div class="block2">
+  <div class="main social">
+    <div class="socials">
+      <h2 style="font-family: monaco, monospace;">Follow me:</h2>
+      <a href="https://www.instagram.com/paige3lizabethphotography/" class="fa fa-instagram"></a>
+      <a href="https://www.linkedin.com/in/paige-mahnke-39b926210/" class="fa fa-linkedin"></a>
+		<a href="https://www.facebook.com/paige.elizabeth.129" class="fa fa-facebook"></a>
+    </div>
+ </div>
+</div>
+</div>
+
 </body>
 
 
